@@ -2,8 +2,8 @@
 
 // Add about enable section
 $wp_customize->add_section( 'library_about_section', array(
-	'title'             => esc_html__('About','library'),
-	'description'       => esc_html__( 'About section options.', 'library' ),
+	'title'             => esc_html__('Announcement','library'),
+	'description'       => esc_html__( 'Announcement section options.', 'library' ),
 	'panel'             => 'library_sections_panel'
 ) );
 

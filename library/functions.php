@@ -228,6 +228,9 @@ require get_template_directory() . '/inc/jetpack.php';
  */
 require get_template_directory() . '/inc/core.php';
 
+// register announcements post type
+include( '/inc/lib/announcements-post-type.php');
+
 /*
 *Register gallery thumbnail size to media.
 */
