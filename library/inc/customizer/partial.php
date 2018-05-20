@@ -33,6 +33,17 @@ function library_partial_category_blog_two_title() {
 }
 
 /**
+ * Render the announcements title for the selective refresh partial.
+ *
+ * @since library 0.3
+ * @return string
+ */
+function library_partial_announcements_title() {
+	$options = library_get_theme_options();
+	return $options['announcements_title'];
+}
+
+/**
  * Render the category blog three title for the selective refresh partial.
  *
  * @since library 0.3

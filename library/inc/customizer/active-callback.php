@@ -132,6 +132,20 @@ function library_category_blog_two_active( $control ) {
 }
 
 /**
+ * Check if announcements is enable.
+ *
+ * @since library 0.3
+ * @param WP_Customize_Control $control WP_Customize_Control instance.
+ * @return bool Whether the control is active to the current preview.
+ */
+function library_announcements_active( $control ) {
+	if ( 'disabled' != $control->manager->get_setting( 'library_theme_options[announcements_enable]' )->value() )
+		return true;
+
+	return false;
+}
+
+/**
  * Check if category blog two type is multiple category.
  *
  * @since library 0.3
@@ -140,6 +154,20 @@ function library_category_blog_two_active( $control ) {
  */
 function library_category_blog_two_multiple_category( $control ) {
 	if ( 'disabled' != $control->manager->get_setting( 'library_theme_options[category_blog_two_enable]' )->value() && 'multiple-category' == $control->manager->get_setting( 'library_theme_options[category_blog_two_type]' )->value() )
+		return true;
+
+	return false;
+}
+
+/**
+ * Check if category blog two type is multiple category.
+ *
+ * @since library 0.3
+ * @param WP_Customize_Control $control WP_Customize_Control instance.
+ * @return bool Whether the control is active to the current preview.
+ */
+function library_announcements_multiple_category( $control ) {
+	if ( 'disabled' != $control->manager->get_setting( 'library_theme_options[announcements_enable]' )->value() && 'multiple-category' == $control->manager->get_setting( 'library_theme_options[announcements_type]' )->value() )
 		return true;
 
 	return false;

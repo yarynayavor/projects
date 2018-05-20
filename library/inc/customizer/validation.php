@@ -80,21 +80,21 @@ function library_validate_no_of_slider( $validity, $value ){
 }
 
 /**
- * About section statistics 
+ * announcements section
  * 
  * @since library 0.3
- * @return validation for max and min no of statistics details
+ * @return validation for max and min no of articles
  */
-function library_validate_no_of_about_statistics( $validity, $value ){
-       $value = intval( $value );
-   if ( empty( $value ) || ! is_numeric( $value ) ) {
-       $validity->add( 'required', esc_html__( 'You must supply a valid number.', 'library' ) );
-   } elseif ( $value < 1 ) {
-       $validity->add( 'min_no_of_words', esc_html__( 'Minimum no of statistics is 1', 'library' ) );
-   } elseif ( $value > 6 ) {
-       $validity->add( 'max_no_of_words', esc_html__( 'Maximum no of statistics is 6', 'library' ) );
-   }
-   return $validity;
+function library_validate_announcements_count( $validity, $value ){
+    $value = intval( $value );
+if ( empty( $value ) || ! is_numeric( $value ) ) {
+    $validity->add( 'required', esc_html__( 'You must supply a valid number.', 'library' ) );
+} elseif ( $value < 1 ) {
+    $validity->add( 'min_no_of_words', esc_html__( 'Minimum no of article is 1', 'library' ) );
+} elseif ( $value > 12 ) {
+    $validity->add( 'max_no_of_words', esc_html__( 'Maximum no of articles is 12', 'library' ) );
+}
+return $validity;
 }
 
 

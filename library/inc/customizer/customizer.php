@@ -77,8 +77,8 @@ function library_customize_register( $wp_customize ) {
 	// Slider
 	require get_template_directory() . '/inc/customizer/sections/slider.php';
 
-	// About
-	require get_template_directory() . '/inc/customizer/sections/about.php';
+	// Announcements
+	require get_template_directory() . '/inc/customizer/sections/announcements.php';
 
 	// category blog one
 	require get_template_directory() . '/inc/customizer/sections/category-blog-first.php';

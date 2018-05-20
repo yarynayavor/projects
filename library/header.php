@@ -105,7 +105,7 @@
 	* library_primary_content hook
 	*
 	* @hooked library_add_slider_section - 10
-	* @hooked library_add_about_section - 20
+	* @hooked library_add_announcements_section - 20
 	* @hooked library_add_category_blog_one - 30
 	* @hooked library_add_category_blog_two - 50
 	* @hooked library_add_category_blog_three - 60

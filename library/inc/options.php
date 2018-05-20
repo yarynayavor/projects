@@ -157,6 +157,37 @@ function library_category_blog_two_layout() {
 
 
 /**
+ * Category blog two content type
+ * @return array Category blog two content type options
+ */
+function library_announcements_type() {
+  $library_announcements_type = array(
+    'multiple-category' => esc_html__( 'Multiple Category', 'library' ),
+    'recent-posts'      => esc_html__( 'Recent Posts', 'library' ),
+  );
+
+  $output = apply_filters( 'library_announcements_type', $library_announcements_type );
+
+  return $output;
+}
+
+/**
+ * announcements content layout
+ * @return array announcements content type options
+ */
+function library_announcements_layout() {
+  $library_announcements_layout = array(
+    3  => esc_html__( '3 Column', 'library' ),
+    4  => esc_html__( '4 Column', 'library' ),
+  );
+
+  $output = apply_filters( 'library_announcements_layout', $library_announcements_layout );
+
+  return $output;
+}
+
+
+/**
  * Category blog three content layout
  * @return array Category blog three content type options
  */

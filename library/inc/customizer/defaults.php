@@ -47,8 +47,14 @@ function library_get_default_theme_options() {
 		'slider_call_to_action_new_tab' => true,
 		'enable_slider_caption' 		=> true,
 		
-		// about
-		'about_section_enable'			=> 'disabled',
+		// announcements
+		'announcements_enable'		=> 'disabled',
+		'announcements_dragable'	=> true,
+		'announcements_autoplay'	=> true,
+		'announcements_title'		=> esc_html__( 'Second Category Blog', 'library' ),
+		'announcements_count'		=> 8,
+		'announcements_type'		=> 'recent-posts',
+		'announcements_layout'		=> 4,
 		
 		
 		// category blog two

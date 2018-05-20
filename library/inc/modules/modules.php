@@ -18,8 +18,8 @@ require get_template_directory() . '/inc/modules/top-bar.php';
 // Add slider section
 require get_template_directory() . '/inc/modules/slider.php';
 
-// Add about section
-require get_template_directory() . '/inc/modules/about.php';
+// Add announcements section
+require get_template_directory() . '/inc/modules/announcements.php';
 
 // Add category blog one
 require get_template_directory() . '/inc/modules/category-blog-first.php';
